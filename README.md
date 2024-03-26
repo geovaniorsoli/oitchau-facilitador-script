@@ -6,9 +6,9 @@ Para mais detalhes e instruções de uso, acesse a [documentação](https://auto
 
 ## Scripts disponíveis
 
-- `auto`: Script principal que aguarda o horário de registro e realiza a marcação de ponto na plataforma Oitchau.
-- `autoIntervalo`: Script para aguardar o intervalo para almoço e fazer o registro correspondente.
-- `autoSaida`: Script para aguardar o horário de saída e realizar o registro de ponto de saída.
+- `auto`: Script principal que ao executar e realiza a marcação de ponto na plataforma Oitchau.
+- `autoIntervalo`: Script que ao executar, aguarda o tempo necessário para a paginar carregar, bate o ponto e bloqueia o computador.
+- `autoSaida`: Faz a mesma coisa que autoIntervalo, porém desliga o seu computador.
 
 ## Linguagens e bibliotecas
 
