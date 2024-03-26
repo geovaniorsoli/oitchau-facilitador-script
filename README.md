@@ -5,5 +5,7 @@ Acesse documentação em https://auto-time.vercel.app
 - auto
 - autoIntervalo
 - autoSaida
-
-
+# Liguagens e bibliotecas
+- Python
+- Selenium
+- Pyinstaller
