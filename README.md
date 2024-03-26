@@ -2,7 +2,7 @@
 
 Este é um conjunto de scripts desenvolvidos para facilitar o processo de registro de ponto na plataforma Oitchau. Os scripts foram criados para aguardar o tempo de espera em horários de pico, como entrada às 8h, intervalo para almoço às 12h e retorno do almoço às 13h, bem como a saída às 18h.
 
-Para mais detalhes e instruções de uso, acesse a [documentação](https://auto-time.vercel.app).
+Para mais detalhes e instruções de uso, acesse a [documentação](https://oitchau-facilitador.vercel.app/).
 
 ## Scripts disponíveis
 
