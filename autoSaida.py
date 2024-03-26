@@ -33,7 +33,7 @@ try:
     button = WebDriverWait(driver, 9000).until(EC.element_to_be_clickable((By.XPATH, "//div[contains(text(), 'Marcar Ponto')]")))
     button.click()
     
-    button = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.XPATH, "//span[contains(text(), 'MARCAR PONTO')]")))
+    button = WebDriverWait(driver, 9000).until(EC.element_to_be_clickable((By.XPATH, "//span[contains(text(), 'MARCAR PONTO')]")))
     button.click()
 
                 
