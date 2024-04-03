@@ -37,7 +37,9 @@ try:
     button = WebDriverWait(driver, math.inf).until(EC.element_to_be_clickable((By.XPATH, "//span[contains(text(), 'MARCAR PONTO')]")))
     button.click()
 
-    button = WebDriverWait(driver, math.inf).until(EC.element_to_be_clickable((By.XPATH, "//button[contains(text(), 'PRONTO')]")))
+    time.sleep(2)
+    
+    button = WebDriverWait(driver, math.inf).until(EC.element_to_be_clickable((By.XPATH, "//button[contains(text(), 'Pronto')]")))
     button.click()
 
                 
