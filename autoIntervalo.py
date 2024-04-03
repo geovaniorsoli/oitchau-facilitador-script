@@ -16,7 +16,7 @@ password = os.getenv("PASS")
 web = os.getenv("WEB")
 
 driver = webdriver.Edge()
-
+time = 3
 try:
     driver.execute_script("window.open('about:blank', '_blank');")
     driver.switch_to.window(driver.window_handles[-1])
@@ -37,14 +37,14 @@ try:
     button = WebDriverWait(driver, math.inf).until(EC.element_to_be_clickable((By.XPATH, "//span[contains(text(), 'MARCAR PONTO')]")))
     button.click()
 
-    time.sleep(2)
+    time.sleep(time)
     
     button = WebDriverWait(driver, math.inf).until(EC.element_to_be_clickable((By.XPATH, "//button[contains(text(), 'Pronto')]")))
     button.click()
 
                 
 finally:
-    time.sleep(3)
+    time.sleep(time)
     ctypes.windll.user32.LockWorkStation()
     driver.quit()
     

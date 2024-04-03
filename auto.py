@@ -15,6 +15,8 @@ web = os.getenv("WEB")
 
 driver = webdriver.Edge()
 
+time = 3
+
 try:
     driver.execute_script("window.open('about:blank', '_blank');")
     driver.switch_to.window(driver.window_handles[-1])
@@ -35,12 +37,12 @@ try:
     button = WebDriverWait(driver, math.inf).until(EC.element_to_be_clickable((By.XPATH, "//span[contains(text(), 'MARCAR PONTO')]")))
     button.click()
     
-    time.sleep(2)
+    time.sleep(time)
     
     button = WebDriverWait(driver, math.inf).until(EC.element_to_be_clickable((By.XPATH, "//button[contains(text(), 'Pronto')]")))
     button.click()
 
-    time.sleep(5)
+    time.sleep(time)
 
 finally:
     driver.quit()
