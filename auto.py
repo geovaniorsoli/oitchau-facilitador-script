@@ -1,4 +1,3 @@
-import time
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
@@ -31,6 +30,9 @@ try:
     button = WebDriverWait(driver, math.inf).until(EC.element_to_be_clickable((By.XPATH, "//button[contains(text(), 'Acessar painel')]")))
     button.click()
 
+    button = WebDriverWait(driver, math.inf).until(EC.element_to_be_clickable((By.XPATH, "//button[@class='css-ziwnim']")))
+    button.click()
+
     button = WebDriverWait(driver, math.inf).until(EC.element_to_be_clickable((By.XPATH, "//div[contains(text(), 'Marcar Ponto')]")))
     button.click()
 
@@ -40,10 +42,9 @@ try:
     time.sleep(time)
     
     button = WebDriverWait(driver, math.inf).until(EC.element_to_be_clickable((By.XPATH, "//button[contains(text(), 'Pronto')]")))
-    button.click()
+    button.click() 
 
     time.sleep(time)
 
 finally:
     driver.quit()
-
