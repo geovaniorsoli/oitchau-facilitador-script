@@ -3,7 +3,6 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import math
-import time 
 
 # dotenv environment
 import os 
@@ -14,8 +13,6 @@ password = os.getenv("PASS")
 web = os.getenv("WEB")
 
 driver = webdriver.Edge()
-
-waitTime = 3
 
 try:
     driver.execute_script("window.open('about:blank', '_blank');")
@@ -44,5 +41,4 @@ try:
     button.click() 
 
 finally:
-    time.sleep(waitTime)
     driver.quit()
