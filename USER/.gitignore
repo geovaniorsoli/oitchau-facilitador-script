@@ -1,0 +1,6 @@
+.env
+build
+dist
+auto.spec
+autoIntervalo.spec
+autoSaida.spec
